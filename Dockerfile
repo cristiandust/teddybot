@@ -9,4 +9,4 @@ COPY . .
 RUN npm install --omit=dev
 
 ENTRYPOINT ["/usr/local/bin/npm"]
-CMD ["start", "--", "-c", "./settings.yaml"]
+CMD ["start", "--", "-c", "data/settings.yaml"]
