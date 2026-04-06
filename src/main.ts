@@ -51,6 +51,14 @@ const settingsPath = args.config;
 const rawSettingsObj = jsYaml.load(fs.readFileSync(settingsPath, "utf-8"));
 const settings = Settings.fromObj(rawSettingsObj);
 
+// Override tokens from environment variables if present (takes precedence over YAML)
+if (process.env.DISCORD_BOT_TOKEN) {
+	(settings.discord as any)._token = process.env.DISCORD_BOT_TOKEN;
+}
+if (process.env.TELEGRAM_BOT_TOKEN) {
+	(settings.telegram as any)._token = process.env.TELEGRAM_BOT_TOKEN;
+}
+
 // Initialize logger
 const logger = new Logger(settings.debug);
 

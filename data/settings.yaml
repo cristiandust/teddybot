@@ -1,5 +1,5 @@
 telegram:
-  token: 8481724149:AAHaYJHyN8bRK6HgxGa4akoQzHBYvLZ1ncA # Telegram bot tokens look like this: 113031530:AAH_4c5Gt9gsVu82OVNjUV7poU7PodYiNsA
+  token: YOUR_TELEGRAM_TOKEN_HERE # Telegram bot tokens look like this: 113031530:AAH_4c5Gt9gsVu82OVNjUV7poU7PodYiNsA
   useFirstNameInsteadOfUsername: false
   colonAfterSenderName: false
   skipOldMessages: true
@@ -12,7 +12,7 @@ telegram:
   suppressThisIsPrivateBotMessage: false
 discord:
   useNickname: false
-  token: MTQ5MDY4NDg3NjgwOTMxMDIyOA.GEcn9M.nbWLJvWzvTX7CFffJQc9dJJ6Zm1jUICJDjz75M # Discord bot tokens look like this: MjI3MDA1NzIvOBQ2MzAzMiMz.DRf-aw.N0MVYtDxXYPSQew4g2TPqvQve2c
+  token: YOUR_DISCORD_TOKEN_HERE # Discord bot tokens look like this: MjI3MDA1NzIvOBQ2MzAzMiMz.DRf-aw.N0MVYtDxXYPSQew4g2TPqvQve2c
   skipOldMessages: true
   replyLength: 100
   maxReplyLines: 2
