@@ -1,0 +1,42 @@
+telegram:
+  token: 8481724149:AAHaYJHyN8bRK6HgxGa4akoQzHBYvLZ1ncA # Telegram bot tokens look like this: 113031530:AAH_4c5Gt9gsVu82OVNjUV7poU7PodYiNsA
+  useFirstNameInsteadOfUsername: false
+  colonAfterSenderName: false
+  skipOldMessages: true
+  sendEmojiWithStickers: true
+  useCustomEmojiFilter: false # Experimental, might break
+  replaceAtWithHash: false # Experimental, might break
+  replaceExcessiveSpaces: false # Experimental, might break
+  removeNewlineSpaces: false # Experimental, might break
+  suppressFileTooBigMessages: false
+  suppressThisIsPrivateBotMessage: false
+discord:
+  useNickname: false
+  token: MTQ5MDY4NDg3NjgwOTMxMDIyOA.GEcn9M.nbWLJvWzvTX7CFffJQc9dJJ6Zm1jUICJDjz75M # Discord bot tokens look like this: MjI3MDA1NzIvOBQ2MzAzMiMz.DRf-aw.N0MVYtDxXYPSQew4g2TPqvQve2c
+  skipOldMessages: true
+  replyLength: 100
+  maxReplyLines: 2
+  suppressThisIsPrivateBotMessage: false
+  enableCustomStatus: false
+  customStatusMessage: "TediCross"
+bridges:
+  - name: First bridge
+    direction: both
+    telegram:
+      chatId: -5256088764 # Remember that Telegram group and channel IDs are negative. Include the `-` if you are bridging a group or a channel
+      relayJoinMessages: true
+      relayLeaveMessages: true
+      sendUsernames: true
+      crossDeleteOnDiscord: true
+    discord:
+      channelId: '1479923826862194972' # This ID must be wrapped in single quotes. Example: '244791815503347712'
+      relayJoinMessages: true
+      relayLeaveMessages: true
+      sendUsernames: true
+      crossDeleteOnTelegram: true
+      disableWebPreviewOnTelegram: false
+      useEmbeds: 'auto' # always / never / auto
+debug: false
+messageTimeoutAmount: 24
+messageTimeoutUnit: 'hours' # This string must be a valid Moment time format. Example: seconds, minutes, hours, days, weeks, months, years
+persistentMessageMap: false
